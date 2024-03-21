@@ -1,0 +1,39 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    width: 100px;
+    height: 105px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 3px;
+}
+.board-row {
+    margin-bottom: 10px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    color: black;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    cursor: pointer;
+
+}
+.tile-text {
+    text-align: center;
+    justify-content: center;
+
+}
+
+.tile.empty {
+    background-color: transparent;
+    cursor: not-allowed;
+    pointer-events: none;
+}
